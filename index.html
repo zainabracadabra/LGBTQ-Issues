@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>LGBTQ+ Issues</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <!-- link the webpage's stylesheet -->
+	  <link rel="stylesheet" href="/style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="/script.js" defer></script>
+
+  </head>
+  
+  <body>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="homelessness.html">Homelessness</a></li>
+    <li><a href="violence.html">Violence</a></li>
+    <li><a href="action.html">Take Action</a></li>
+    <li><a href="resources.html">Resources</a></li>
+  </ul>
+</nav>
+<!-- Carousel -->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides fade">
+    <img src="assets/lgbtq.jpeg" style="width:100%" alt = "Pride parade: crowd of people holding pride flags">
+    <div class="caption"> Series of attacks against LGBTQ+ community </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="assets/girls.png" style="width:100%" alt = "Two brunette girls laughing, one girl has her arm around the other">
+    <div class="caption"> Series of attacks against LGBTQ+ community </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="assets/fists.png" style="width:100%" alt = "Black and red fists in the air representing equality">
+    <div class="caption"> Series of attacks against LGBTQ+ community </div>
+  </div>
+</div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<!-- Insert text regarding the other pages -->
+<h1>∙ MISSION ∙</h1>
+<div class = "box"> <p> Although it lacks an impact on others, a person's gender identity and sexuality may increase the rate at which they experience discrimination, <a href = "violence.html">violence</a>, and <a href = "homelessness.html">homelessness</a>, among others. A lack of access to this knowledge in turn causes ignorance in society. My mission is to inform about these statistics and providing resources to help communities in need. </p> </div>
+    
+<!-- Fact generator -->
+<div class= "genFact">
+  <p>For more information:</p>
+	<button id="myButton">Click me</button>
+  <p id="fact"></p> 
+</div>
+  </body>
+</html>

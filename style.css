@@ -1,0 +1,257 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+ background-color: white; 
+}
+
+/* STYLE TEXT */
+/* insert colors, fonts, etc */
+
+h1 {
+  color:cadetblue;
+  text-align:center;
+  font-size:50px;
+  font-family:"papyrus", fantasy;
+}
+
+h2 {
+  color:cadetblue;
+  font-family:"papyrus", fantasy;
+}
+
+p {
+  margin: 2em;
+  font-size:1.1em;
+  font-family: "Century Gothic";
+}
+
+/* Home page caption/title on carousel */
+.caption {
+  font-family:"papyrus", fantasy;
+  color: #43D6B9;
+  background:black;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.violence {
+  font-family:"papyrus", fantasy;
+  color: #43D6B9;
+  background:black;
+  font-size: 80px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* Carousel div */
+.container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Align two elements next to each other */
+.column1{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.column2 {
+  float: left;
+  width: 32%;
+  padding: 5px;
+}
+
+/* Violence page caption*/
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Right-Align */
+.right {
+  text-align:right;
+}
+
+/* Home page mission box */ 
+.box {
+  background-color: lightblue;
+  max-width: 100%;
+  padding: 40px;
+  margin: 60px;
+  justify-content:center;
+  text-align:center;
+}
+
+/* Carousel */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  justify-content:center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #43D6B9;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  justify-content:center;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: black;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* STYLE IMAGES */
+img {
+  margin-top: 2em;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* STYLE NAV BAR */
+ul {
+  list-style-type: none;
+  overflow:hidden;
+  margin: 0;
+  padding: 1em;
+  text-align:right;
+  font-family:"papyrus", fantasy;
+} 
+
+li{
+  display: inline;
+}
+
+li a {
+  background-color: #D6FFFE;
+  color:black;
+  font-size:1.3em;
+  text-decoration:none;
+  padding:1em;
+}
+
+li a:hover {
+  background-color:#43D6B9;
+}
+
+/* Fact generator */
+.genFact{
+  justify-content:center;
+  text-align: center;
+  background:lightyellow;
+  border-radius:10%;
+  border-style:none;
+  padding:15px;
+  margin-top:30px;
+  margin-right:35%;
+  margin-left:35%;
+}
+
+#fact{
+  justify-content:center;
+  text-align:center;
+  border-style:none;
+  padding:15px;
+  margin-top:30px;
+  margin-right:15%;
+  margin-left:15%;
+}
+
+button { 
+  margin-top: 5px;
+  background-color: powderblue;
+  border-style: solid black;
+  font-size:17px;
+  font-family: 'Balsamiq Sans', arial, sans-serif;
+  justify-content:center;
+  text-align:center;
+}
+
+/* button:hover {
+  background-color: pink;
+  color: black;
+  border-color: black;
+} */
+
+/* Style the overlay */
+#overlay{
+  position:fixed;
+  width=100%;
+  height=100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#fff3eB;
+  z-index: 2;
+  text-align:center;
+}
